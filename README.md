@@ -1,12 +1,16 @@
 # Physics olympiad handouts
 Materials for the physics club sessions for the Rwandan physics olympiad. We use these materials for our weekly sessions (typically a few weeks per handout). You are welcome to use these as you see fit, for your own leisure/practice or teaching. In general, this can be thought of as a slightly simpler version of Jaan Kalda's excellent handouts.
-\\
+
+
 These handouts will often have an introduction/preface written by me which contains some physics olympiad advice and/or ruminations on the physics topic at hand (I may get some things wrong in this, if you do see anything that loos odd don't be afraid to reach out and let me know).
-\\
+
+
 If you have any questions/comments/corrections, just reach out! emil.ryd@gmail.com
-\\\\
+
+
 **Suitable for anyone with**: High school level knowledge of physics looking to advance their problem solving skills and get introduced to olympiad problem solving in physics.
-\\\\
+
+
 **Nota bene**: The vast majority of the questions are from other (excellent) sources! I have yet to attrbitue them properly in the handouts themselves, and will instead list all the references I used here below (along with some other helpful resources), I highly encourage you to check them out if you are interested, and that they will forgive me for not providing closer citation.
 
 ## References
