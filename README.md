@@ -30,6 +30,7 @@ If you have any questions/comments/corrections, just reach out! emil.ryd@gmail.c
 - Introduction to Classical Mechanics, D. Morin: [https://objectstorage.ap-mumbai-1.oraclecloud.com/n/bmzytd5z5pt3/b/Class12/o/1653331658-ncert-6.pdf](url)
 - Fundamental of Physics, D. Halliday & R. Resnick: [https://elearn.daffodilvarsity.edu.bd/pluginfile.php/987150/mod_label/intro/fundamentals-of-physics-textbook.pdf](url)
 - Physics Olympiad Hub: [https://physoly.tech](url)
+
 **Competitions**
 - International Physics Olympiad (IPhO): [https://ipho-unofficial.org/](url)
 - European Physics Olympaid (EuPhO): [https://eupho.ee/](url)
