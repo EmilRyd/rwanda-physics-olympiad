@@ -15,7 +15,7 @@ If you have any questions/comments/corrections, just reach out! emil.ryd@gmail.c
 
 ## References
 **Books/texts**
-- Jaan Kalda's handouts: [https://www.ioc.ee/~kalda/ipho/](url)
+- [Jaan Kalda's handouts](https://www.ioc.ee/~kalda/ipho/)
 - Problems in General Physics, I.E. Irodov: [https://archive.org/details/IrodovProblemsInGeneralPhysics/page/n25/mode/2up](url)
 - Aptitude Test Problems in Physics, S.S. Krotov: [https://ia601408.us.archive.org/0/items/ProblemsInPhysicsSSKrotov/Problems%20In%20Physics%20SS%20Krotov.pdf](url)
 - 200 Puzzling Physics Problems, P. Gnädig & G. Honyek & K.F. Riley: [https://shrek.unideb.hu/~learner/elemifizika/200%20puzzling%20physics%20problem.pdf](url)
