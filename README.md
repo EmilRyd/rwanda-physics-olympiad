@@ -34,7 +34,7 @@ If you have any questions/comments/corrections, just reach out! emil.ryd@gmail.c
 **Competitions**
 - [International Physics Olympiad (IPhO)](https://ipho-unofficial.org/)
 - [European Physics Olympaid (EuPhO)](https://eupho.ee/)
-- [Asian Physics Olympiad (APhO])(http://asianphysicsolympiad.org/)
+- [Asian Physics Olympiad (APhO)](http://asianphysicsolympiad.org/)
 - [Nordic Baltic Physics Olympiad (NbPhO)](https://nbpho.ee/)
 - [British Physics Olympiad (BPhO)](https://www.bpho.org.uk/)
 - [Norwegian Physics Olympiad](https://www.mn.uio.no/fysikk/forskning/grupper/skolelab/fysikk-ol/tidligere-olympiadeoppgaver.html)
