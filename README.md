@@ -11,7 +11,7 @@ If you have any questions/comments/corrections, just reach out! emil.ryd@gmail.c
 **Suitable for anyone with**: High school level knowledge of physics looking to advance their problem solving skills and get introduced to olympiad problem solving in physics.
 
 
-**Nota bene**: The vast majority of the questions are from other (excellent) sources! I have yet to attrbitue them properly in the handouts themselves, and will instead list all the references I used here below (along with some other helpful resources), I highly encourage you to check them out if you are interested, and that they will forgive me for not providing closer citation.
+**Nota bene**: The vast majority of the questions are from other (excellent) sources! I have yet to attribute them properly in the handouts themselves, and will instead list all the references I used here below (along with some other helpful resources), I highly encourage you to check them out if you are interested, and that they will forgive me for not providing closer citation.
 
 ## References
 **Books/texts**
@@ -25,7 +25,11 @@ If you have any questions/comments/corrections, just reach out! emil.ryd@gmail.c
 - Feynman Lectures - Exercises, R. Feynman: [https://www.feynmanlectures.caltech.edu/info/exercises.html](url)
 - Physics Olympiad - Basic to Advanced Exercises, Japan Physics Olympiad: [https://irp-cdn.multiscreensite.com/721e955d/files/uploaded/Physics-Olympiad-Basic-To-Advanced-Exercises.pdf](url)
 - Problems & Solutions in Introductory Mechanics, David Morin: [https://davidmorin.physics.fas.harvard.edu/books/problems-mechanics/](url)
-
+- Kevin Zhou's handouts: [https://knzhou.github.io/](url)
+- Physics, D. Halliday & K. Krane & R. Resnick: [https://www.amazon.co.uk/Physics-1-Vol-Robert-Resnick/dp/0471320579](url)
+- Introduction to Classical Mechanics, D. Morin: [https://objectstorage.ap-mumbai-1.oraclecloud.com/n/bmzytd5z5pt3/b/Class12/o/1653331658-ncert-6.pdf](url)
+- Fundamental of Physics, D. Halliday & R. Resnick: [https://elearn.daffodilvarsity.edu.bd/pluginfile.php/987150/mod_label/intro/fundamentals-of-physics-textbook.pdf](url)
+- Physics Olympiad Hub: [https://physoly.tech](url)
 **Competitions**
 - International Physics Olympiad (IPhO): [https://ipho-unofficial.org/](url)
 - European Physics Olympaid (EuPhO): [https://eupho.ee/](url)
