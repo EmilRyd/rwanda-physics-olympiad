@@ -36,6 +36,9 @@ If you have any questions/comments/corrections, just reach out! emil.ryd@gmail.c
 - European Physics Olympaid (EuPhO): [https://eupho.ee/](url)
 - Asian Physics Olympiad (APhO): [http://asianphysicsolympiad.org/](url)
 - Nordic Baltic Physics Olympiad (NbPhO): [https://nbpho.ee/](url)
+- British Physics Olympiad (BPhO): [https://www.bpho.org.uk/](url)
+- Norwegian Physics Olympiad: [https://www.mn.uio.no/fysikk/forskning/grupper/skolelab/fysikk-ol/tidligere-olympiadeoppgaver.html](url)
+- Swedish Physics Olympiad (Wallenbergs fysikpris): [https://www.fysikersamfundet.se/wallenbergs-fysikpris/](url)
 
 
 
