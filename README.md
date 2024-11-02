@@ -16,29 +16,29 @@ If you have any questions/comments/corrections, just reach out! emil.ryd@gmail.c
 ## References
 **Books/texts**
 - [Jaan Kalda's handouts](https://www.ioc.ee/~kalda/ipho/)
+- [Kevin Zhou's handouts](https://knzhou.github.io/)
 - [Problems in General Physics](https://archive.org/details/IrodovProblemsInGeneralPhysics/page/n25/mode/2up), I.E. Irodov
-- Aptitude Test Problems in Physics, S.S. Krotov: [https://ia601408.us.archive.org/0/items/ProblemsInPhysicsSSKrotov/Problems%20In%20Physics%20SS%20Krotov.pdf](url)
-- 200 Puzzling Physics Problems, P. Gnädig & G. Honyek & K.F. Riley: [https://shrek.unideb.hu/~learner/elemifizika/200%20puzzling%20physics%20problem.pdf](url)
-- 200 More Puzzling Physics Problems, P. Gnädig & G. Honyek & M. Vigh: [https://archive.org/details/200-more-puzzling-physics-problems-with-hints-and-solutions-gnv-64](url)
-- Selected Problems in Physics, Shaskol'skaya & Eltsin: [https://archive.org/details/SelectedProblemsInPhysics-ShaskolskayaAndEltsin](url)
-- Selected Problems on Physics, S.P. Myasnikov & T.N. Osanova: [https://archive.org/details/MyasnikovOsanovaSelectedProblemsOnPhysics/page/3/mode/2up](url)
-- Feynman Lectures - Exercises, R. Feynman: [https://www.feynmanlectures.caltech.edu/info/exercises.html](url)
-- Physics Olympiad - Basic to Advanced Exercises, Japan Physics Olympiad: [https://irp-cdn.multiscreensite.com/721e955d/files/uploaded/Physics-Olympiad-Basic-To-Advanced-Exercises.pdf](url)
-- Problems & Solutions in Introductory Mechanics, David Morin: [https://davidmorin.physics.fas.harvard.edu/books/problems-mechanics/](url)
-- Kevin Zhou's handouts: [https://knzhou.github.io/](url)
-- Physics, D. Halliday & K. Krane & R. Resnick: [https://www.amazon.co.uk/Physics-1-Vol-Robert-Resnick/dp/0471320579](url)
-- Introduction to Classical Mechanics, D. Morin: [https://objectstorage.ap-mumbai-1.oraclecloud.com/n/bmzytd5z5pt3/b/Class12/o/1653331658-ncert-6.pdf](url)
-- Fundamental of Physics, D. Halliday & R. Resnick: [https://elearn.daffodilvarsity.edu.bd/pluginfile.php/987150/mod_label/intro/fundamentals-of-physics-textbook.pdf](url)
-- Physics Olympiad Hub: [https://physoly.tech](url)
+- [Aptitude Test Problems in Physics](https://ia601408.us.archive.org/0/items/ProblemsInPhysicsSSKrotov/Problems%20In%20Physics%20SS%20Krotov.pdf), S.S. Krotov
+- [200 Puzzling Physics Problems](https://shrek.unideb.hu/~learner/elemifizika/200%20puzzling%20physics%20problem.pdf), P. Gnädig & G. Honyek & K.F. Riley
+- [200 More Puzzling Physics Problems](https://archive.org/details/200-more-puzzling-physics-problems-with-hints-and-solutions-gnv-64), P. Gnädig & G. Honyek & M. Vigh:
+- [Selected Problems in Physics](https://archive.org/details/SelectedProblemsInPhysics-ShaskolskayaAndEltsin), Shaskol'skaya & Eltsin
+- [Selected Problems on Physics](https://archive.org/details/MyasnikovOsanovaSelectedProblemsOnPhysics/page/3/mode/2up), S.P. Myasnikov & T.N. Osanova
+- [Feynman Lectures - Exercises](https://www.feynmanlectures.caltech.edu/info/exercises.html), R. Feynman
+- [Physics Olympiad - Basic to Advanced Exercises](https://irp-cdn.multiscreensite.com/721e955d/files/uploaded/Physics-Olympiad-Basic-To-Advanced-Exercises.pdf), Japan Physics Olympiad
+- [Problems & Solutions in Introductory Mechanics](https://davidmorin.physics.fas.harvard.edu/books/problems-mechanics), David Morin
+- [Physics](https://www.amazon.co.uk/Physics-1-Vol-Robert-Resnick/dp/0471320579), D. Halliday & K. Krane & R. Resnick
+- [Introduction to Classical Mechanics](https://objectstorage.ap-mumbai-1.oraclecloud.com/n/bmzytd5z5pt3/b/Class12/o/1653331658-ncert-6.pdf), D. Morin
+- [Fundamental of Physics](https://elearn.daffodilvarsity.edu.bd/pluginfile.php/987150/mod_label/intro/fundamentals-of-physics-textbook.pdf), D. Halliday & R. Resnick
+- [Physics Olympiad Hub](https://physoly.tech):
 
 **Competitions**
-- International Physics Olympiad (IPhO): [https://ipho-unofficial.org/](url)
-- European Physics Olympaid (EuPhO): [https://eupho.ee/](url)
-- Asian Physics Olympiad (APhO): [http://asianphysicsolympiad.org/](url)
-- Nordic Baltic Physics Olympiad (NbPhO): [https://nbpho.ee/](url)
-- British Physics Olympiad (BPhO): [https://www.bpho.org.uk/](url)
-- Norwegian Physics Olympiad: [https://www.mn.uio.no/fysikk/forskning/grupper/skolelab/fysikk-ol/tidligere-olympiadeoppgaver.html](url)
-- Swedish Physics Olympiad (Wallenbergs fysikpris): [https://www.fysikersamfundet.se/wallenbergs-fysikpris/](url)
+- [International Physics Olympiad (IPhO)](https://ipho-unofficial.org/)
+- [European Physics Olympaid (EuPhO)](https://eupho.ee/)
+- [Asian Physics Olympiad (APhO])(http://asianphysicsolympiad.org/)
+- [Nordic Baltic Physics Olympiad (NbPhO)](https://nbpho.ee/)
+- [British Physics Olympiad (BPhO)](https://www.bpho.org.uk/)
+- [Norwegian Physics Olympiad](https://www.mn.uio.no/fysikk/forskning/grupper/skolelab/fysikk-ol/tidligere-olympiadeoppgaver.html)
+- [Swedish Physics Olympiad (Wallenbergs fysikpris)](https://www.fysikersamfundet.se/wallenbergs-fysikpris/)
 
 
 
