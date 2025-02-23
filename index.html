@@ -2,6 +2,10 @@
 
 <html lang="en">
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+  <!-- Add Masonry -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+<!-- Add imagesLoaded -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/5.0.0/imagesloaded.pkgd.min.js"></script>
   <head>
     <base target="_blank">
     <meta charset="utf-8" />
@@ -40,18 +44,58 @@
   </head>
 
   <body>
-    
+    <header>
+      <h1>Rwanda Physics Olympiad</h1>
+  </header>
+  
     
       <section class="content", style="font-size: 16px;">
-        <header>
-          <h1>Rwanda Physics Olympiad (RwPhO)</h1>
-      </header>
-      <div class="avatar-div"><img src="../assets/laws_of_physics_2x.png" alt="Emil Ryd" id="comic" /></div>
-      <p id="image-text"> comic from <a target="_blank" href="https://xkcd.com/1670/">xkcd</a></p>
-        <!-- Text -->
         
+      <!-- 
+      <div class="avatar-div"><img src="../assets/laws_of_physics_2x.png" alt="Emil Ryd" id="comic" /></div> 
+       <p id="image-text"> comic from <a target="_blank" href="https://xkcd.com/1670/">xkcd</a></p>
+       -->
+      
+      
+      <!-- Modal for full-size image view 
+      <div class="modal" onclick="closeModal()">
+        <div class="modal-content">
+          <img id="modal-img" src="" alt="Full size image">
+        </div>
+      </div>
+      -->
+        <!-- Text -->
+        <div class="masonry-gallery">
+          <!-- Replace src attributes with your actual image paths -->
+          <div class="masonry-item">
+            <img src="assets/physics_club/rwpho_0.png" alt="Physics Club Photo 1" onclick="openModal(this.src)">
+          </div>
+          <div class="masonry-item">
+            <img src="assets/physics_club/rwpho_1.jpg" alt="Physics Club Photo 2" onclick="openModal(this.src)">
+          </div>
+          <div class="masonry-item">
+            <img src="assets/physics_club/rwpho_2.jpg" alt="Physics Club Photo 3" onclick="openModal(this.src)">
+          </div>
+          <div class="masonry-item">
+            <img src="assets/physics_club/rwpho_3.jpg" alt="Physics Club Photo 4" onclick="openModal(this.src)">
+          </div>
+          <div class="masonry-item">
+            <img src="assets/physics_club/rwpho_4.jpg" alt="Physics Club Photo 5" onclick="openModal(this.src)">
+          </div>
+          <div class="masonry-item">
+            <img src="assets/physics_club/rwpho_5.jpg" alt="Physics Club Photo 6" onclick="openModal(this.src)">
+          </div>
+          <div class="masonry-item">
+            <img src="assets/physics_club/rwpho_6.jpg" alt="Physics Club Photo 6" onclick="openModal(this.src)">
+          </div>
+          <div class="masonry-item">
+            <img src="assets/physics_club/rwpho_7.jpg" alt="Physics Club Photo 6" onclick="openModal(this.src)">
+          </div>
+          <div class="masonry-item">
+            <img src="assets/physics_club/rwpho_8.jpg" alt="Physics Club Photo 6" onclick="openModal(this.src)">
+          </div>
+        </div>
     <h3>Training materials</h3>
-       
   
         <p>We have prepared these handouts for the physics club sessions for the Rwandan physics olympiad. We use these materials for our weekly sessions (typically a few weeks per handout). You are welcome to use these as you see fit, for your own leisure/practice or teaching.
         </p>
@@ -115,7 +159,51 @@
     
 
     
-    
+    <script>
+      // Initialize Masonry after all images are loaded
+      var grid = document.querySelector('.masonry-gallery');
+      var msnry;
+      
+      imagesLoaded(grid, function() {
+        msnry = new Masonry(grid, {
+          itemSelector: '.masonry-item',
+          columnWidth: '.masonry-item',
+          gutter: 20,
+          percentPosition: true
+        });
+      });
+      
+      // Modal functionality
+      function openModal(imgSrc) {
+        const modal = document.querySelector('.modal');
+        const modalImg = document.getElementById('modal-img');
+        modal.style.display = 'block';
+        modalImg.src = imgSrc;
+      }
+      
+      function closeModal() {
+        document.querySelector('.modal').style.display = 'none';
+      }
+      
+      // Close modal with Escape key
+      document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape') {
+          closeModal();
+        }
+      });
+      
+      // Recalculate layout on window resize
+      window.addEventListener('resize', function() {
+        if (msnry) {
+          msnry.layout();
+        }
+      });
+      </script>
   </body>
  
 </html>
+
+
+
+
+

@@ -1,11 +1,15 @@
 html {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Courier New', sans-serif;
     font-size: larger;
-    font-weight: 300;
+    font-weight: 100;
     display: table;
     width: 100%;
     height: 100%;
 }
+h1 {
+    font-size: 2em; /* Keeps the default <h1> size */
+    font-weight: normal; /* Removes bold */
+  }
 body {
     width: 100%;
     height: 100%;
@@ -56,7 +60,7 @@ header {
 .content {
     margin: auto;
     text-align: left;
-    max-width: 520px;
+    max-width: 800px;
     padding: 32px;
     line-height: 1.6em;
 }
@@ -110,3 +114,101 @@ header {
 .icons a:hover {
     color: #1565c0;
 }
+
+.masonry-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    transition: all 0.3s ease-in-out;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+  /* Hover effect - Expand the hovered image */
+  .masonry-item:hover {
+    z-index: 10;
+    transform: scale(1.5); /* Enlarges the image */
+  }
+  
+  /* Reduce size of non-hovered images */
+  .masonry-gallery:hover .masonry-item:not(:hover) {
+    transform: scale(0.8);
+    opacity: 0.7;
+  }
+
+.masonry-item {
+    flex: 1 1 auto;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    width: calc(33.333% - 40px);
+    margin-bottom: 20px;
+}
+.masonry-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.masonry-gallery:hover .masonry-item:not(:hover) {
+    transform: scale(0.8);
+    opacity: 0.7;
+}
+
+.masonry-item:hover img {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+  
+  @media (max-width: 800px) {
+    .masonry-item {
+      width: calc(33.333% - 40px);
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .masonry-item {
+      width: 100%;
+    }
+  }
+  
+  .masonry-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+  }
+  
+  
+  /* Modal styles */
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    cursor: pointer;
+  }
+  
+  .modal-content {
+    max-width: 90%;
+    max-height: 90vh;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .modal-content img {
+    max-width: 100%;
+    max-height: 90vh;
+    object-fit: contain;
+  }
