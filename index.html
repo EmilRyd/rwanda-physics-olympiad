@@ -7,7 +7,6 @@
 <!-- Add imagesLoaded -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/5.0.0/imagesloaded.pkgd.min.js"></script>
   <head>
-    <base target="_blank">
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -19,7 +18,7 @@
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🇷🇼</text></svg>">
 
     <!-- Include style sheets -->
-    <link rel="stylesheet" href="/main.css" />
+    <link rel="stylesheet" href="main.css" />
 
     <!-- Fonts from Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -44,12 +43,32 @@
   </head>
 
   <body>
+    <nav class="nav-container">
+      <ul class="nav-list">
+        <li><a href="index.html" class="nav-item active">Home</a></li>
+        <li><a href="competitions.html" class="nav-item">Competitions</a></li>
+        <li><a href="practice.html" class="nav-item">Practice</a></li>
+      </ul>
+    </nav>
+
+
+    <div class="scattered-images">
+      <img class="scattered-image" src="assets/physics_club/rwpho_0.png" alt="Physics Club Photo 1">
+      <img class="scattered-image" src="assets/physics_club/rwpho_1.jpg" alt="Physics Club Photo 2">
+      <img class="scattered-image" src="assets/physics_club/rwpho_2.jpg" alt="Physics Club Photo 3">
+      <img class="scattered-image" src="assets/physics_club/rwpho_3.jpg" alt="Physics Club Photo 4">
+      <img class="scattered-image" src="assets/physics_club/rwpho_4.jpg" alt="Physics Club Photo 5">
+      <img class="scattered-image" src="assets/physics_club/rwpho_5.jpg" alt="Physics Club Photo 6">
+      <img class="scattered-image" src="assets/physics_club/rwpho_6.jpg" alt="Physics Club Photo 7">
+      <img class="scattered-image" src="assets/physics_club/rwpho_7.jpg" alt="Physics Club Photo 8">
+      <img class="scattered-image" src="assets/physics_club/rwpho_8.jpg" alt="Physics Club Photo 9">
+    </div>
+
     <header>
       <h1>Rwanda Physics Olympiad</h1>
-  </header>
+    </header>
   
-    
-      <section class="content", style="font-size: 16px;">
+    <section class="content", style="font-size: 16px;">
         
       <!-- 
       <div class="avatar-div"><img src="../assets/laws_of_physics_2x.png" alt="Emil Ryd" id="comic" /></div> 
@@ -96,88 +115,65 @@
           </div>
         </div>
         
-    <h3>Training materials</h3>
-  
-        <p>We have prepared these handouts for the physics club sessions for the Rwandan physics olympiad. We use these materials for our weekly sessions (typically a few weeks per handout). You are welcome to use these as you see fit, for your own leisure/practice or teaching.
-        </p>
-        <p></p>
-          In general, this material can be thought of as a slightly simpler version of Jaan Kalda's excellent handouts, and should
-          be suitable to anyone with high school level knowledge of physics looking to advance their problem solving skills and get introduced to olympiad problem solving in physics.
-        </p>
+    <p>Welcome to the Rwandan Physics Olympiad!</p>
 
-        <p>These handouts will often have an introduction/preface written by me which contains some physics olympiad advice and/or ruminations on the physics topic at hand (I may get some things wrong in this, if you do see anything that looks odd don't be afraid to reach out and let me know).</p>
-        
-        <p>These handouts are still very much a work in progress, and will grow over time. If you have any questions/comments/corrections, <a href="mailto:emil.ryd@gmail.com">just reach out!</a></p>
-        
-        </p>
-        
-        <p><strong>Nota bene:</strong> The vast majority of the questions are from other (excellent) sources! I have yet to attribute them properly in the handouts themselves, and will instead list all the references I used here below (along with some other helpful resources), I highly encourage you to check them out if you are interested, and that they will forgive me for not providing closer citation within the handouts themselves.</p>
+    <p>The first edition of the Rwandan Physics Olympiad <b style="font-weight: bold;">will start in October 2025</b>. See the <a href="competitions.html">"Competitions"</a> page for more details.</p>
 
-        <strong>Kinematics</strong>
-          <ol>
-            <li><a href="handouts/I_Frames_of_Reference.pdf">Frames of Reference</a></li>
-          </ol>
-        <strong>Mechanics</strong>
-        <ol>
-          <li><a href="handouts/II_Introduction_to_Forces.pdf">Introduction to Forces</a></li>
-          <li><a href="handouts/III_Geometric_Force_Techniques_compr.pdf">Geometric Force Techniques</a></li>
-          <li><a href="handouts/IV_Introduction_to_Rotational_Motion.pdf">Introduction to Rotational Motion</a></li>
-          <li><a href="handouts/V_Energy_Introduction.pdf">Energy: Introduction</a></li>
-        </ol>
-        <h3>References</h3>
-        
-        <h4>Books/texts</h4>
-    <ul>
-      <li><a href="https://www.ioc.ee/~kalda/ipho/">Jaan Kalda's handouts</a></li>
-      <li><a href="https://knzhou.github.io/">Kevin Zhou's handouts</a></li>
-      <li><a href="https://archive.org/details/IrodovProblemsInGeneralPhysics/page/n25/mode/2up">Problems in General Physics</a>, I.E. Irodov</li>
-      <li><a href="https://ia601408.us.archive.org/0/items/ProblemsInPhysicsSSKrotov/Problems%20In%20Physics%20SS%20Krotov.pdf">Aptitude Test Problems in Physics</a>, S.S. Krotov</li>
-      <li><a href="https://shrek.unideb.hu/~learner/elemifizika/200%20puzzling%20physics%20problem.pdf">200 Puzzling Physics Problems</a>, P. Gnädig & G. Honyek & K.F. Riley</li>
-      <li><a href="https://archive.org/details/200-more-puzzling-physics-problems-with-hints-and-solutions-gnv-64">200 More Puzzling Physics Problems</a>, P. Gnädig & G. Honyek & M. Vigh</li>
-      <li><a href="https://archive.org/details/SelectedProblemsInPhysics-ShaskolskayaAndEltsin">Selected Problems in Physics</a>, Shaskol'skaya & Eltsin</li>
-      <li><a href="https://archive.org/details/MyasnikovOsanovaSelectedProblemsOnPhysics/page/3/mode/2up">Selected Problems on Physics</a>, S.P. Myasnikov & T.N. Osanova</li>
-      <li><a href="https://www.feynmanlectures.caltech.edu/info/exercises.html">Feynman Lectures - Exercises</a>, R. Feynman</li>
-      <li><a href="https://irp-cdn.multiscreensite.com/721e955d/files/uploaded/Physics-Olympiad-Basic-To-Advanced-Exercises.pdf">Physics Olympiad - Basic to Advanced Exercises</a>, Japan Physics Olympiad</li>
-      <li><a href="https://davidmorin.physics.fas.harvard.edu/books/problems-mechanics">Problems & Solutions in Introductory Mechanics</a>, David Morin</li>
-      <li><a href="https://www.amazon.co.uk/Physics-1-Vol-Robert-Resnick/dp/0471320579">Physics</a>, D. Halliday & K. Krane & R. Resnick</li>
-      <li><a href="https://objectstorage.ap-mumbai-1.oraclecloud.com/n/bmzytd5z5pt3/b/Class12/o/1653331658-ncert-6.pdf">Introduction to Classical Mechanics</a>, D. Morin</li>
-      <li><a href="https://elearn.daffodilvarsity.edu.bd/pluginfile.php/987150/mod_label/intro/fundamentals-of-physics-textbook.pdf">Fundamental of Physics</a>, D. Halliday & R. Resnick</li>
-      <li><a href="https://physoly.tech">Physics Olympiad Hub</a></li>
-    </ul>
-    <h4>Websites</h4>
+    <p>If you are looking for practice materials, see the <a href="practice.html">"Practice"</a> page.</p>
 
-          <ul>
-            <li><a href="https://isaacphysics.org/questions">Isaac Physics</a></li>
-          </ul>
-
-    <h4>Competitions</h4>
-    <ul>
-      <li><a href="https://ipho-unofficial.org/">International Physics Olympiad (IPhO)</a></li>
-      <li><a href="https://eupho.ee/">European Physics Olympaid (EuPhO)</a></li>
-      <li><a href="http://asianphysicsolympiad.org/">Asian Physics Olympiad (APhO)</a></li>
-      <li><a href="https://nbpho.ee/">Nordic Baltic Physics Olympiad (NbPhO)</a></li>
-      <li><a href="https://www.bpho.org.uk/">British Physics Olympiad (BPhO)</a></li>
-      <li><a href="https://www.mn.uio.no/fysikk/forskning/grupper/skolelab/fysikk-ol/tidligere-olympiadeoppgaver.html">Norwegian Physics Olympiad</a></li>
-      <li><a href="https://www.fysikersamfundet.se/wallenbergs-fysikpris/">Swedish Physics Olympiad (Wallenbergs fysikpris)</a></li>
-    </ul>
-
-
-    </section>
-    
-
+    <p>If you are interested in joining our weekly training sessions, send us an email at <a href="mailto:emil.ryd@gmail.com" target="_blank">emil.ryd@gmail.com</a>. We welcome beginners and experienced students and high school graduates alike!</p>
     
     <script>
-      // Initialize Masonry after all images are loaded
-      var grid = document.querySelector('.masonry-gallery');
-      var msnry;
-      
-      imagesLoaded(grid, function() {
-        msnry = new Masonry(grid, {
-          itemSelector: '.masonry-item',
-          columnWidth: '.masonry-item',
-          gutter: 20,
-          percentPosition: true
-        });
+      document.addEventListener('DOMContentLoaded', function() {
+        const images = document.querySelectorAll('.scattered-image');
+        const marginWidth = 40; // Reduced margin width to bring images closer
+        const imageWidth = 140; // Width of our images
+        
+        // Only proceed with image positioning if screen is wide enough
+        if (window.innerWidth >= 1200) {
+          // Calculate available vertical space
+          const headerHeight = document.querySelector('header').offsetHeight;
+          const contentElement = document.querySelector('.content');
+          const contentRect = contentElement.getBoundingClientRect();
+          const contentLeft = contentRect.left;
+          const contentRight = contentRect.right;
+          
+          // Calculate the actual available height with extra padding at bottom
+          const contentHeight = Math.max(
+            document.body.scrollHeight,
+            document.documentElement.scrollHeight,
+            contentElement.offsetHeight + contentElement.offsetTop
+          );
+          const minHeight = headerHeight + 40;
+          const maxHeight = contentHeight - 100;
+          
+          // Calculate safe positions that are closer to content
+          const leftPosition = contentLeft - imageWidth + 30; // Closer to content edge
+          const rightPosition = contentRight - 30; // Closer to content edge
+          
+          images.forEach((img, index) => {
+            // Ensure image is visible
+            img.style.display = 'block';
+            
+            // Distribute images evenly along the height of the page
+            const segment = (maxHeight - minHeight) / (images.length - 1);
+            const baseYPos = minHeight + (segment * index);
+            const randomYOffset = segment * 0.15 * (Math.random() - 0.5);
+            const yPos = Math.min(baseYPos + randomYOffset, maxHeight - 100);
+            
+            // Alternate between left and right with smaller random variations
+            const isLeft = index % 2 === 0;
+            const xPos = isLeft ? 
+              leftPosition + (Math.random() * 40) : // Left side, closer to content
+              rightPosition + (Math.random() * 40); // Right side, closer to content
+            
+            // Random rotation between -15 and 15 degrees
+            const rotation = (Math.random() - 0.5) * 30;
+            
+            // Apply the transformation
+            img.style.transform = `translate(${xPos}px, ${yPos}px) rotate(${rotation}deg)`;
+          });
+        }
       });
       
       // Modal functionality
@@ -199,13 +195,17 @@
         }
       });
       
-      // Recalculate layout on window resize
+      // Reposition images if window is resized
       window.addEventListener('resize', function() {
-        if (msnry) {
-          msnry.layout();
+        if (window.innerWidth < 1200) {
+          document.querySelector('.scattered-images').style.display = 'none';
+        } else {
+          document.querySelector('.scattered-images').style.display = 'block';
+          // Trigger the positioning logic again
+          document.dispatchEvent(new Event('DOMContentLoaded'));
         }
       });
-      </script>
+    </script>
   </body>
  
 </html>

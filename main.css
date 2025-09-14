@@ -16,6 +16,8 @@ body {
     display: table-cell;
     vertical-align: top;
     padding-top: 10px;
+    position: relative;
+    min-height: 100vh;
 }
 
 a {
@@ -35,20 +37,67 @@ nav {
 }
 header {
     text-align: center;
+    position: relative;
+    z-index: 0;
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    padding-top: 0; /* Reduced top padding since nav will provide spacing */
 }
 .nav-bar {
     top: 0;
     right: 0;
 }
 
+.nav-container {
+    text-align: center;
+    padding: 20px 0;
+    background: white;
+    position: relative;
+    z-index: 2;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
 .nav-item {
-    margin: 10px;
-    color: black;
-    text-decoration: underline
+    font-size: 16px;
+    text-decoration: none;
+    color: #333;
+    position: relative;
+    padding-bottom: 2px;
 }
 
 .nav-item:hover {
-    color: grey;
+    color: #1565c0;
+}
+
+.nav-item.active {
+    color: #1565c0;
+}
+
+/* Underline effect */
+.nav-item::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: #1565c0;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-item:hover::after,
+.nav-item.active::after {
+    width: 100%;
 }
 
 #image-text {
@@ -61,8 +110,13 @@ header {
     margin: auto;
     text-align: left;
     max-width: 800px;
-    padding: 32px;
+    padding: 32px 20px; /* Default padding for mobile */
     line-height: 1.6em;
+    position: relative;
+    background: white;
+    z-index: 0;
+    margin-top: 20px;
+    margin-bottom: 100px; /* Add margin at bottom */
 }
 
 .avatar-div {
@@ -115,52 +169,33 @@ header {
     color: #1565c0;
 }
 
-.masonry-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 10px;
-    transition: all 0.3s ease-in-out;
-    justify-content: center;
+.scattered-images {
+    position: absolute;
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-  /* Hover effect - Expand the hovered image */
-  .masonry-item:hover {
-    z-index: 10;
-    transform: scale(1.5); /* Enlarges the image */
-  }
-  
-  /* Reduce size of non-hovered images */
-  .masonry-gallery:hover .masonry-item:not(:hover) {
-    transform: scale(0.8);
-    opacity: 0.7;
-  }
-
-.masonry-item {
-    flex: 1 1 auto;
-    transition: all 0.3s ease-in-out;
-    position: relative;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 1;
     overflow: hidden;
-    width: calc(33.333% - 40px);
-    margin-bottom: 20px;
-}
-.masonry-item img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 8px;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-.masonry-gallery:hover .masonry-item:not(:hover) {
-    transform: scale(0.8);
-    opacity: 0.7;
+    display: none; /* Hidden by default */
+    padding-bottom: 200px; /* Add padding at bottom to prevent cutoff */
 }
 
-.masonry-item:hover img {
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+.scattered-image {
+    position: absolute;
+    width: 140px; /* Increased from 100px */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0.85;
+}
+
+.masonry-gallery,
+.masonry-item,
+.modal,
+.modal-content {
+    display: none;
 }
 
   
@@ -212,3 +247,21 @@ header {
     max-height: 90vh;
     object-fit: contain;
   }
+
+/* Desktop styles */
+@media (min-width: 1200px) {
+    .scattered-images {
+        display: block; /* Show images on desktop */
+    }
+    
+    .content {
+        padding: 32px 160px; /* Increased padding to accommodate larger images */
+    }
+}
+
+/* Hide images and adjust content for smaller screens */
+@media (max-width: 1199px) {
+    .content {
+        padding: 32px 20px;
+    }
+}
