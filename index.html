@@ -52,17 +52,6 @@
     </nav>
 
 
-    <div class="scattered-images">
-      <img class="scattered-image" src="assets/physics_club/rwpho_0.png" alt="Physics Club Photo 1">
-      <img class="scattered-image" src="assets/physics_club/rwpho_1.jpg" alt="Physics Club Photo 2">
-      <img class="scattered-image" src="assets/physics_club/rwpho_2.jpg" alt="Physics Club Photo 3">
-      <img class="scattered-image" src="assets/physics_club/rwpho_3.jpg" alt="Physics Club Photo 4">
-      <img class="scattered-image" src="assets/physics_club/rwpho_4.jpg" alt="Physics Club Photo 5">
-      <img class="scattered-image" src="assets/physics_club/rwpho_5.jpg" alt="Physics Club Photo 6">
-      <img class="scattered-image" src="assets/physics_club/rwpho_6.jpg" alt="Physics Club Photo 7">
-      <img class="scattered-image" src="assets/physics_club/rwpho_7.jpg" alt="Physics Club Photo 8">
-      <img class="scattered-image" src="assets/physics_club/rwpho_8.jpg" alt="Physics Club Photo 9">
-    </div>
 
     <header>
       <h1>Rwanda Physics Olympiad</h1>
@@ -84,37 +73,6 @@
       </div>
       -->
         <!-- Text -->
-        <div class="masonry-gallery">
-          <!-- Replace src attributes with your actual image paths -->
-          <div class="masonry-item">
-            <img src="assets/physics_club/rwpho_0.png" alt="Physics Club Photo 1" onclick="openModal(this.src)">
-          </div>
-          <div class="masonry-item">
-            <img src="assets/physics_club/rwpho_1.jpg" alt="Physics Club Photo 2" onclick="openModal(this.src)">
-          </div>
-          <div class="masonry-item">
-            <img src="assets/physics_club/rwpho_2.jpg" alt="Physics Club Photo 3" onclick="openModal(this.src)">
-          </div>
-          <div class="masonry-item">
-            <img src="assets/physics_club/rwpho_3.jpg" alt="Physics Club Photo 4" onclick="openModal(this.src)">
-          </div>
-          <div class="masonry-item">
-            <img src="assets/physics_club/rwpho_4.jpg" alt="Physics Club Photo 5" onclick="openModal(this.src)">
-          </div>
-          <div class="masonry-item">
-            <img src="assets/physics_club/rwpho_5.jpg" alt="Physics Club Photo 6" onclick="openModal(this.src)">
-          </div>
-          <div class="masonry-item">
-            <img src="assets/physics_club/rwpho_6.jpg" alt="Physics Club Photo 6" onclick="openModal(this.src)">
-          </div>
-          <div class="masonry-item">
-            <img src="assets/physics_club/rwpho_7.jpg" alt="Physics Club Photo 6" onclick="openModal(this.src)">
-          </div>
-          <div class="masonry-item">
-            <img src="assets/physics_club/rwpho_8.jpg" alt="Physics Club Photo 6" onclick="openModal(this.src)">
-          </div>
-        </div>
-        
     <p>Welcome to the Rwandan Physics Olympiad!</p>
 
     <p>The first edition of the Rwandan Physics Olympiad <b style="font-weight: bold;">will start in October 2025</b>. See the <a href="competitions/">"Competitions"</a> page for more details.</p>
@@ -123,86 +81,60 @@
 
     <p>If you are interested in joining our weekly training sessions, send us an email at <a href="mailto:emil.ryd@gmail.com" target="_blank">emil.ryd@gmail.com</a>. We welcome beginners and experienced students and high school graduates alike!</p>
     
+    </section>
+
+    <!-- Images section - moved under text content -->
+    <div class="images-under-text">
+      <img class="unstructured-image" src="assets/physics_club/rwpho_0.png" alt="Physics Club Photo 1">
+      <img class="unstructured-image" src="assets/physics_club/rwpho_1.jpg" alt="Physics Club Photo 2">
+      <img class="unstructured-image" src="assets/physics_club/rwpho_2.jpg" alt="Physics Club Photo 3">
+      <img class="unstructured-image" src="assets/physics_club/rwpho_3.jpg" alt="Physics Club Photo 4">
+      <img class="unstructured-image" src="assets/physics_club/rwpho_4.jpg" alt="Physics Club Photo 5">
+      <img class="unstructured-image" src="assets/physics_club/rwpho_5.jpg" alt="Physics Club Photo 6">
+      <img class="unstructured-image" src="assets/physics_club/rwpho_6.jpg" alt="Physics Club Photo 7">
+      <img class="unstructured-image" src="assets/physics_club/rwpho_7.jpg" alt="Physics Club Photo 8">
+      <img class="unstructured-image" src="assets/physics_club/rwpho_8.jpg" alt="Physics Club Photo 9">
+    </div>
+    
     <script>
       document.addEventListener('DOMContentLoaded', function() {
-        const images = document.querySelectorAll('.scattered-image');
-        const marginWidth = 40; // Reduced margin width to bring images closer
-        const imageWidth = 140; // Width of our images
+        const images = document.querySelectorAll('.unstructured-image');
+        const container = document.querySelector('.images-under-text');
         
-        // Only proceed with image positioning if screen is wide enough
-        if (window.innerWidth >= 1200) {
-          // Calculate available vertical space
-          const headerHeight = document.querySelector('header').offsetHeight;
-          const contentElement = document.querySelector('.content');
-          const contentRect = contentElement.getBoundingClientRect();
-          const contentLeft = contentRect.left;
-          const contentRight = contentRect.right;
-          
-          // Calculate the actual available height with extra padding at bottom
-          const contentHeight = Math.max(
-            document.body.scrollHeight,
-            document.documentElement.scrollHeight,
-            contentElement.offsetHeight + contentElement.offsetTop
-          );
-          const minHeight = headerHeight + 40;
-          const maxHeight = contentHeight - 100;
-          
-          // Calculate safe positions that are closer to content
-          const leftPosition = contentLeft - imageWidth + 30; // Closer to content edge
-          const rightPosition = contentRight - 30; // Closer to content edge
+        if (container && images.length > 0) {
+          // Hardcoded positions for hodge-podge layout (percentages of container)
+          const positions = [
+            { x: 5, y: 15, rotation: -12, scale: 0.9, zIndex: 3 },
+            { x: 25, y: 45, rotation: 18, scale: 1.1, zIndex: 7 },
+            { x: 60, y: 10, rotation: -8, scale: 0.85, zIndex: 2 },
+            { x: 45, y: 75, rotation: 25, scale: 1.05, zIndex: 5 },
+            { x: 75, y: 35, rotation: -15, scale: 0.95, zIndex: 4 },
+            { x: 15, y: 80, rotation: 12, scale: 1.15, zIndex: 8 },
+            { x: 85, y: 65, rotation: -22, scale: 0.88, zIndex: 1 },
+            { x: 35, y: 25, rotation: 8, scale: 1.08, zIndex: 6 },
+            { x: 65, y: 85, rotation: -18, scale: 0.92, zIndex: 9 }
+          ];
           
           images.forEach((img, index) => {
-            // Ensure image is visible
-            img.style.display = 'block';
-            
-            // Distribute images evenly along the height of the page
-            const segment = (maxHeight - minHeight) / (images.length - 1);
-            const baseYPos = minHeight + (segment * index);
-            const randomYOffset = segment * 0.15 * (Math.random() - 0.5);
-            const yPos = Math.min(baseYPos + randomYOffset, maxHeight - 100);
-            
-            // Alternate between left and right with smaller random variations
-            const isLeft = index % 2 === 0;
-            const xPos = isLeft ? 
-              leftPosition + (Math.random() * 40) : // Left side, closer to content
-              rightPosition + (Math.random() * 40); // Right side, closer to content
-            
-            // Random rotation between -15 and 15 degrees
-            const rotation = (Math.random() - 0.5) * 30;
-            
-            // Apply the transformation
-            img.style.transform = `translate(${xPos}px, ${yPos}px) rotate(${rotation}deg)`;
+            if (index < positions.length) {
+              const pos = positions[index];
+              const containerWidth = container.offsetWidth;
+              const containerHeight = container.offsetHeight;
+              
+              // Convert percentages to pixels
+              const xPos = (pos.x / 100) * (containerWidth - 120);
+              const yPos = (pos.y / 100) * (containerHeight - 120);
+              
+              // Apply positioning and styling
+              img.style.left = xPos + 'px';
+              img.style.top = yPos + 'px';
+              img.style.transform = `rotate(${pos.rotation}deg) scale(${pos.scale})`;
+              img.style.zIndex = pos.zIndex;
+              
+              // Add a slight delay to the appearance
+              img.style.animationDelay = `${index * 0.1}s`;
+            }
           });
-        }
-      });
-      
-      // Modal functionality
-      function openModal(imgSrc) {
-        const modal = document.querySelector('.modal');
-        const modalImg = document.getElementById('modal-img');
-        modal.style.display = 'block';
-        modalImg.src = imgSrc;
-      }
-      
-      function closeModal() {
-        document.querySelector('.modal').style.display = 'none';
-      }
-      
-      // Close modal with Escape key
-      document.addEventListener('keydown', function(event) {
-        if (event.key === 'Escape') {
-          closeModal();
-        }
-      });
-      
-      // Reposition images if window is resized
-      window.addEventListener('resize', function() {
-        if (window.innerWidth < 1200) {
-          document.querySelector('.scattered-images').style.display = 'none';
-        } else {
-          document.querySelector('.scattered-images').style.display = 'block';
-          // Trigger the positioning logic again
-          document.dispatchEvent(new Event('DOMContentLoaded'));
         }
       });
     </script>
